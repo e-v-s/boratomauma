@@ -1,5 +1,21 @@
 import Button from '../components/button.js'
 
+const db = firebase.firestore();
+
+db.collection('bars').get().then((snap) => {
+	snap.forEach((doc) => {
+		console.log(`${doc.id} => ${doc.data()}`)
+	})
+})
+
+const mudarprologin = () => {
+	location.hash = 'login';
+}
+
+const mudarprocadastro = () => {
+	location.hash = 'register';
+}
+
 const homePage = () => {
 	window.location.hash = '';
 	const template = `
@@ -13,14 +29,6 @@ const homePage = () => {
 		onclick: mudarprocadastro
 	})}`;
 	return template;
-}
-
-const mudarprologin = () => {
-	location.hash = 'login';
-}
-
-const mudarprocadastro = () => {
-	location.hash = 'register';
 }
 
 export default homePage;
