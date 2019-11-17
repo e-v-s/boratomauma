@@ -5,9 +5,43 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
 	<title>Bora tomá uma?</title>
+	<script src="https://js.api.here.com/v3/3.1/mapsjs-core.js"
+  	type="text/javascript" charset="utf-8"></script>
+	<script src="https://js.api.here.com/v3/3.1/mapsjs-service.js"
+  	type="text/javascript" charset="utf-8"></script>
+
+
 </head>
 <body>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+	https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-analytics.js"></script>
 	<main></main>
+	<div style="width: 640px; height: 480px" id="mapa"></div>
+	<script src="mainpageLogged.js"></script> 
 	<script type="module" src="./main.js"></script>
+
+	<script>
+			// Your web app's Firebase configuration
+			let firebaseConfig = {
+    		apiKey: "AIzaSyCEigbINFdPou-jsr4wQ6QSv62mr4v41l0",
+    		authDomain: "projeto-open-house.firebaseapp.com",
+    		databaseURL: "https://projeto-open-house.firebaseio.com",
+    		projectId: "projeto-open-house",
+    		storageBucket: "projeto-open-house.appspot.com",
+    		messagingSenderId: "176508765761",
+    		appId: "1:176508765761:web:3621aa245d6aa1bb9e68c0"
+			};
+			// Initialize Firebase
+			firebase.initializeApp(firebaseConfig);
+			firebase.analytics();
+		
+			let db = firebase.firestore();
+			
+		  </script>
 </body>
 </html>
