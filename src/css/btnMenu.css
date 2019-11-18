@@ -1,0 +1,20 @@
+.btnMenu{
+    display: block;
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    text-indent: -9999px;
+    padding: 20px 15px;
+}
+
+.btnMenu_open{
+    background: url('../images/icon-menu.png');
+    background-repeat: no-repeat;
+    background-position: 15px center;
+}
+
+.btnMenu_close{
+    background-color: black;
+    background-image: url('../images/icon-menu-yellow.png');
+    cursor: pointer;
+    padding-top: 40px;
+}
