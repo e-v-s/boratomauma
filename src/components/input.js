@@ -4,7 +4,8 @@ const Input = (props) => {
 	type="${props.type}" 
 	id="${props.id}" 
 	class="${props.class}"
-	placeholder="${props.placeholder}">`;
+	placeholder="${props.placeholder}"
+	name="${props.name}">`;
 	return template;
 }
 

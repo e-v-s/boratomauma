@@ -14,7 +14,7 @@ const loginPage = () => {
 	${Button({
 		type:'submit',
 		id:'emailSubmit',
-		class:'button',
+		class:'btn',
 		title:'Login',
 		onclick: teste,
 	})}
