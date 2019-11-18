@@ -28,6 +28,8 @@ const hash = () => {
   		if (user) {
   			if (location.hash === '') {
   				return homeLoggedMain();
+  			} else if (location.hash === '#mainlogged') {
+  				return homeLoggedMain();
   			}
   		} else {
   			if (location.hash === '') {
