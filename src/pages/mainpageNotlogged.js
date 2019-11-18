@@ -22,20 +22,20 @@ const homePage = () => {
   <h1>Página inicial sem estar logado</h1>
   ${Button({
     title:'ir pro login',
-    onclick: mudarprologin
+    onclick: loginRoute
   })}
   ${Button({
     title:'ir pro cadastro',
-    onclick: mudarprocadastro
+    onclick: registerRoute
   })}`;
   return template;
 }
 
-const mudarprologin = () => {
+const loginRoute = () => {
 	location.hash = 'login';
 }
 
-const mudarprocadastro = () => {
+const registerRoute = () => {
 	location.hash = 'register';
 }
 

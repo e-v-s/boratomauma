@@ -102,5 +102,4 @@ const registerPage = () => {
 	return template;
 }
 
-
 export default registerPage;
