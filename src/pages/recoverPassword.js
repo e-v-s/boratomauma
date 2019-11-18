@@ -1,11 +1,13 @@
-import Button from '../components/button.js';
-import Input from '../components/input.js';
+import Button from '../components/button.js'
+import Input from '../components/input.js'
 
 const recoverPage = () => {
 	window.location.hash = 'recover';
 	const  template = `
+	<section class="recover-layout">
 	<h1>Recuperação de senha</h1>
-	<h2>Insira seu e-mail cadastrado para recuperar a sua senha</h2>
+	<h2>Insira seu e-mail cadastrado para redefinir a sua senha</h2>
+	<form id='form-email'>
 	${Input({
 		type:'text',
 		id:'email',
@@ -13,9 +15,12 @@ const recoverPage = () => {
 		placeholder:'e-mail'
 	})}
 	${Button({
-		title:'Recuperar senha',
+		title:'Redefinir senha',
 		onclick: recoverPassword
-	})}`;
+	})}
+	</form>
+	<p id='message'></p>
+	</section>`;
 	return template;
 }
 
@@ -23,11 +28,9 @@ const recoverPassword = () => {
 	const email = document.querySelector('.email-recover').value;
 	firebase.auth().sendPasswordResetEmail(email)
 		.then(() => {
-			alert = 'E-mail de redefinição de senha enviado'
+			document.querySelector('#message').innerHTML = 'E-mail de redefinição de senha enviado',
+			document.getElementById('form-email').reset()
 		})
-		
-	// UserRecord = FirebaseAuth.getInstance().getUserByEmail(email);
-	location.hash = '';
 }
 
 export default recoverPage;

@@ -1,29 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="style.css">
-	<title>Bora tomá uma?</title>
-	<script src="https://js.api.here.com/v3/3.1/mapsjs-core.js"
-  	type="text/javascript" charset="utf-8"></script>
-	<script src="https://js.api.here.com/v3/3.1/mapsjs-service.js"
-  	type="text/javascript" charset="utf-8"></script>
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="imagem/png" href="/images/icon.jpeg" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/btnMenu.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <title>BoraProBar</title>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
 </head>
-<body>
-	<!-- The core Firebase JS SDK is always required and must be listed first -->
-	<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
-	<!-- TODO: Add SDKs for Firebase products that you want to use
-	https://firebase.google.com/docs/web/setup#available-libraries -->
-	<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-analytics.js"></script>
-	<main></main>
-	<div style="width: 640px; height: 480px" id="mapa"></div>
-	<script src="mainpageLogged.js"></script> 
-	<script type="module" src="./main.js"></script>
 
+<body>
+    <header>
+        <nav class="wrap-menu">
+            <a href="#menu" class="btnMenu btnMenu_open">Menu</a>
+            <ul id="menu" class="menu">
+                <li class="btnMenu btnMenu_close"></li>
+                <li class="menu-item">
+                    <a href="" class="menu-item-action">Reservas</a>
+                </li>
+                <li class="menu-item">
+                    <a href="" class="menu-item-action">Eventos</a>
+                </li>
+                <li class="menu-item">
+                    <a href="" class="menu-item-action">Meus cupons</a>
+                </li>
+            </ul>
+        </nav>
+        <h1 class="logo">Logo</h1>
+    </header>
+    <div class="slogan"></div>
+    <section class="section">
+        <div class="map-container" id="map">
+        </div>
+    </section>
+		<main id='aqui'></main>
+    <footer>
+        <p>&copy; BoraProBar </p>
+    </footer> 
+	
+	<script type="module" src="./main.js"></script>
+	<script type="text/javascript" src="btnMenu.js"></script>
+	<script type="text/javascript" src="./app.js"></script>
+	<script src="/__/firebase/7.4.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-firestore.js"></script>
+	<script src="/__/firebase/6.2.0/firebase-auth.js"></script>
+	<script src="/__/firebase/init.js"></script>
 </body>
 </html>
