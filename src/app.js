@@ -135,14 +135,15 @@ const mudarprocadastro = () => {
 	location.hash = 'register';
 }
 
-const sortRegion = document.getElementById("sort-region");
-sortRegion.addEventListener('change', (sortRegion) => {
-    sort(sortRegion.target.value)
+const filterRegion = document.getElementById("filter-region");
+filterRegion.addEventListener('change', (filterRegion) => {
+  filter(filterRegion.target.value)
 })
 
-function sort(condition) {
+function filter(condition) {
   if (condition === "center") {
-    let map = new H.Map(
+    document.querySelector('.map-container').innerHTML = '';
+    map = new H.Map(
       document.querySelector('.map-container'),
       defaultLayers.vector.normal.map,
       {
@@ -152,7 +153,8 @@ function sort(condition) {
     )
     ;
   } else if (condition === "oeste") {
-    let map = new H.Map(
+    document.querySelector('.map-container').innerHTML = '';
+    map = new H.Map(
       document.querySelector('.map-container'),
       defaultLayers.vector.normal.map,
       {
@@ -161,7 +163,8 @@ function sort(condition) {
       }
     );
   } else if (condition === "leste") {
-    let map = new H.Map(
+    document.querySelector('.map-container').innerHTML = '';
+    map = new H.Map(
       document.querySelector('.map-container'),
       defaultLayers.vector.normal.map,
       {
@@ -170,7 +173,8 @@ function sort(condition) {
       }
     );
   } else if (condition === "norte") {
-    let map = new H.Map(
+    document.querySelector('.map-container').innerHTML = '';
+    map = new H.Map(
       document.querySelector('.map-container'),
       defaultLayers.vector.normal.map,
       {
@@ -179,7 +183,8 @@ function sort(condition) {
       }
     );
   } else if (condition === "sul") {
-    let map = new H.Map(
+    document.querySelector('.map-container').innerHTML = '';
+    map = new H.Map(
       document.querySelector('.map-container'),
       defaultLayers.vector.normal.map,
       {
