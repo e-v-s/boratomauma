@@ -25,7 +25,7 @@ Definimos o nicho a partir deste *form*, e a partir de entrevistas pessoais veri
 
 ### 3. UX
 
-Com base nos problemas verificados, o nicho do app seriam pessoas maiores de 18 anos que queiram buscar informações sobre bares, mas também que pudessem ter acesso a descontos, à criação de uma carteira virtual para pagamento via *QR code* e também a possibilidade de fazer reservas de mesa com o bar.
+Com base nos problemas verificados, o nicho do app seriam pessoas maiores de 18 anos que queiram buscar informações sobre bares, mas também que pudessem ter acesso a descontos e, no futuro, à criação de uma carteira virtual para pagamento via *QR code*.
 
 ## 3.1 Ferramentas utilizadas
 
@@ -36,9 +36,41 @@ Com base nos problemas verificados, o nicho do app seriam pessoas maiores de 18 
 
 ## 3.2 Personas
 
-<img src="https://i.imgur.com/rfjKyhC.png" width="280" height="200" style="float: right">
-<img src="https://i.imgur.com/fibKiH3.png" width="280" height="200" style="float: right">
-<img src="https://i.imgur.com/98Vl1f7.png" width="280" height="200" style="float: right">
 
-## 3.3 Solução do Problema
+<img src="https://i.imgur.com/rfjKyhC.png" width="280" height="200">
+<img src="https://i.imgur.com/fibKiH3.png" width="280" height="200">
+<img src="https://i.imgur.com/98Vl1f7.png" width="280" height="200">
 
+## 3.3 Solução do Problema e Proposta de Valor
+
+App que proporcione ótima experiência ao usuário, a priori fornecendo informações detalhadas de bares e cupons de descontos. Em outras versões, proporcionar ao estabelecimento um pagamento rápido e seguro através de carteira virtual.
+
+## 3.4 Canais
+
+Mobile (app).
+
+## 3.5 Receita
+
+* Percentual do cupom de desconto
+* Propagandas de bares cadastrados
+* Porcentagem em cima do pagamento via carteira virtual
+
+## 3.6 Estrutura de Custos
+
+* Custos variáveis: Campanhas pontuais de marketing, comissão de vendas e hospedagem do app.
+* Custos fixos: Custo de pessoal, alugéis, instalações e produção física.
+
+## 3.7 Métricas de Sucesso
+
+* Quantidade de cadastrados
+* Quantidade de cupons usados
+* Feedback de clientes/parceiros via chat/email
+* Quantidade de cadastro diário
+
+## 3.8 Vantagem Competitiva
+
+* Cupons e informações centralizadas em um mesmo app
+* Vantagens exclusivas para usuários cadastrados
+* *Carteira de pagamento virtual (QR Code)*
+
+### 4. Planejamento
