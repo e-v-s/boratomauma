@@ -1,0 +1,16 @@
+.cupom-container{
+    border: solid 2px yellow;
+}
+body{
+    display: flex;
+    background: #BF7E04 ;
+    text-align: center;
+    
+}
+.qrcodeimage{
+    display: flex;;
+}
+
+.bar-name{
+    text-align: center;
+}

@@ -10,7 +10,7 @@ const register = (event) => {
 	})
 	const name = document.getElementById('name').value;	
 	const born = document.getElementById('date').value;
-	const gender = document.querySelector(`input[name='gender']:checked=true`).value;
+	const gender = document.querySelector(`input[name='gender']:checked`).value;
 	const user = {
 		name: name,
 		email: email,
