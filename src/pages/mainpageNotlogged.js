@@ -35,7 +35,14 @@ const homePage = () => {
     </div>
   </div>
   <section class="map">
-	 	<div class="search">Aqui vai a barra de pesquisa 
+	 	<div class="search"><select class="filter" id="filter-region">
+            <option value="nune" selected>Buscar por Região</option>
+            <option value="center">Centro</option>
+            <option value="oeste">Zona Oeste</option>
+            <option value="leste">Zona Leste</option>
+            <option value="norte">Zona Norte</option>
+            <option value="sul">Zona Sul</option>
+        </select> 
      </div>
 	  <div class="map-container" id="map">
      Aqui vai o mapa
