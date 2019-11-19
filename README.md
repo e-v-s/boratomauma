@@ -36,9 +36,9 @@ Com base nos problemas verificados, o nicho do app seriam pessoas maiores de 18 
 
 ## 3.2 Personas
 
-<img src="https://i.imgur.com/rfjKyhC.png" width="280" height="200" style="float": right>
-<img src="https://i.imgur.com/fibKiH3.png" width="280" height="200" style="float": right>
-<img src="https://i.imgur.com/98Vl1f7.png" width="280" height="200" style="float": right>
+<img src="https://i.imgur.com/rfjKyhC.png" width="280" height="200" style="float: right">
+<img src="https://i.imgur.com/fibKiH3.png" width="280" height="200" style="float: right">
+<img src="https://i.imgur.com/98Vl1f7.png" width="280" height="200" style="float: right">
 
 ## 3.3 Solução do Problema
 
