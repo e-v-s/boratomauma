@@ -35,7 +35,7 @@ const homePage = () => {
     </div>
   </div>
   <section class="map">
-	 	<div class="search"><select class="filter" id="filter-region">
+	 	<div class="search"><select class="filter" id="filter-region" >
             <option value="nune" selected>Buscar por Região</option>
             <option value="center">Centro</option>
             <option value="oeste">Zona Oeste</option>
@@ -44,14 +44,12 @@ const homePage = () => {
             <option value="sul">Zona Sul</option>
         </select> 
      </div>
-	  <div class="map-container" id="map">
-     Aqui vai o mapa
+    <div class="map-container" id='map'>
+    
     </div>
 	</section>
 	<section class='bar'>
-  </section>
-  
-  `;
+  </section>`;
   return template;
 }
 
