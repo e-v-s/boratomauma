@@ -4,11 +4,10 @@ import registerPage from "../pages/register.js"
 import homeLogged from "../pages/mainpageLogged.js"
 
 const user = firebase.auth().currentUser;
-const main = document.getElementById('main');
-const body= document.querySelector('body');
+const main= document.querySelector('main');
 
 const homeMain = () => {
-	body.innerHTML = homePage();
+	main.innerHTML = homePage();
 }
 
 const loginMain = () => {

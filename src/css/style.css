@@ -28,7 +28,7 @@ header{
     background-image: url('../images/logo.jpeg');
     background-repeat: no-repeat; 
     background-size: 150px;
-    background-position: 90%;
+    background-position: center;
     padding-bottom: 30px;
   
 }
@@ -50,6 +50,13 @@ header{
     background: #BF7E04;   
 }
 
+.loginRegister{
+    display:flex;
+    justify-content: space-around;
+    background:black;
+    padding-bottom:10px;
+    border-top: 1px solid #BF7E04;
+}
 
 .search{
     text-align: center;
@@ -57,10 +64,9 @@ header{
     height: 50px;
     background:#BF7E04;
     padding-top:20px;
-    
 }
 
-.section{
+.map{
     height: 300px;
     background: #BF7E04;
     background-position: center; 
@@ -78,12 +84,17 @@ header{
 
 main{
     width: 100%;
-    height: 200px;
+    height: 500px;
     background:#BF7E04;
+
+}
+
+.bar{
     background-image: url('../images/bar1.jpeg');
     background-size: 250px;
     background-repeat: no-repeat;
     background-position: center;
+
 }
 
 footer{

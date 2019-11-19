@@ -19,8 +19,7 @@ const db = firebase.firestore();
 const homePage = () => {
   window.location.hash = '';
   const template = `
-  <header>
-	  <div class="logo"></div>
+  <div class='top'>
 	  <div class='loginRegister-logout'></div> 
     <div class='loginRegister'>
       ${Button({
@@ -34,18 +33,17 @@ const homePage = () => {
         onclick: registerRoute
       })} 
     </div>
-  </header>
-  	<section class="section">
-	 	  <div class="search">Aqui vai a barra de pesquisa </div>
-	    <div class="map-container" id="map">
-        Aqui vai o mapa
-      </div>
+  </div>
+  <section class="map">
+	 	<div class="search">Aqui vai a barra de pesquisa 
+     </div>
+	  <div class="map-container" id="map">
+     Aqui vai o mapa
+    </div>
 	</section>
-	<main></main>
-  <footer>
-    <p>&copy; BoraProBar </p>
-	</footer>
-
+	<section class='bar'>
+  </section>
+  
   `;
   return template;
 }
