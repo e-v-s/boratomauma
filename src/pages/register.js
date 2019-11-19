@@ -42,26 +42,28 @@ const registerPage = () => {
 	<h1 class="title-register">Registro</h1>
 </div>
 	<form class='page-register-form form'>
-	<p class='title-email-login'>Email</p>
+	<p class='title-input input-position'>Nome</p>
 	${Input({
 		type:'text',
 		id:'name',
 		class:'input',
-		placeholder:'Nome'
+		placeholder:'ex: Marta Vieira'
 	})}
+	<p class='title-input input-position'>Email</p>
 	${Input({
 		type:'email',
 		id:'email',
 		class:'input',
-		placeholder:'E-mail'
+		placeholder:'ex: exemplo@exemplo.com'
 	})}
+	<p class='title-input-age'>Data de nascimento</p>
 	${Input({
 		type:'date',
 		id:'date',
 		class:'input'
 	})}
 	<div class='radio-gender'>
-		<p>Gênero</p>
+	<p class='title-input gender'>Gênero</p>
 		${Input({
 			type:'radio',
 			id:'female',
@@ -95,17 +97,19 @@ const registerPage = () => {
 		})}
 		<label for="prefer-nor-to-answer">Não declarar</label>
 	</div>
+	<p class='title-input input-position password'>Senha</p>
 	${Input({
 		type:'password',
 		id:'password',
 		class:'input',
-		placeholder:'Senha'
+		placeholder:'ex: abc123#'
 	})}
+	<p class='title-input-long'>Repetir senha</p>
 	${Input({
 		type:'password',
 		id:'password-confirmed',
 		class:'input',
-		placeholder:'Confirme sua senha'
+		placeholder:'ex: abc123#'
 	})}
 	${Button({
 		type:'submit',

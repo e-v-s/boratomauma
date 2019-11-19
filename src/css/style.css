@@ -111,7 +111,8 @@ footer{
 }
 
 .title-email-login, .title-password-login{
-    margin-left: -50%;
+    margin-left: -53%;
+    font-size: 14px;
 }
 
 .title-password-login{
@@ -142,7 +143,7 @@ footer{
 }
 
 .input{
-    margin-bottom: 4%;
+    margin-bottom: 1.5%;
     width: 245px;
     height: 38px;
     left: 67px;
@@ -175,6 +176,43 @@ footer{
 .img-voltar{
     width: 37px;
     height: 38px;
+}
+
+.title-input{
+    margin-left: 14%;
+    font-size: 14px;
+}
+
+.input-position{    
+    margin-left: -54%;
+}
+
+.title-input-age{
+    margin-left: -30%;
+    font-size: 14px;
+}
+
+.title-input-long{
+    margin-left: -39%;
+    font-size: 14px;
+}
+
+.radio-gender{
+    font-size: 14px;
+    margin-top: -2%
+}
+
+.radio{
+    margin-top: 3%;
+    margin-left: 10%;
+}
+
+.password{
+    margin-top: 3%;
+}
+
+.gender{
+    margin-top: 3%;
 }
 
 /* MENU*/
