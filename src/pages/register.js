@@ -22,11 +22,27 @@ const register = (event) => {
 	document.getElementById('register-form').reset();
 }
 
+const logout = () => {
+	firebase.auth().signOut().then( () => {
+		window.location.hash = '';
+	})
+}
+
 const registerPage = () => {
 	window.location.hash = 'register';
 	const  template = `
-	<h1>página de registro</h1>
-	<form id='register-form' class='page-register-form'>
+	<div class='login-register'>
+	${Button({
+		id:'btn-logout',
+		class:'btn',
+		type:'submit',
+		title: '<img class="img-voltar" src="images/icone-voltar.png"/>',
+		onclick: logout
+	})}
+	<h1 class="title-register">Registro</h1>
+</div>
+	<form class='page-register-form form'>
+	<p class='title-email-login'>Email</p>
 	${Input({
 		type:'text',
 		id:'name',

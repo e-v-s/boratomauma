@@ -20,15 +20,15 @@ const homePage = () => {
   window.location.hash = '';
   const template = `
   <div class='top'>
-	  <div class='loginRegister-logout'></div> 
-    <div class='loginRegister'>
+	  <div class='login-register-logout'></div> 
+    <div class='login-register'>
       ${Button({
-        class: 'btn-login',
+        class:'btn-rote-login btn',
         title:'Login',
         onclick: loginRoute
       })}
       ${Button({
-        class:'btn-register',
+        class:'btn-rote-register btn',
         title:'Cadastro',
         onclick: registerRoute
       })} 

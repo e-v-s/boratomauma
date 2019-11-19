@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     border: none;
+    font-family: 'Lato', sans-serif;
 }
 
 ul,ol,li{
@@ -10,7 +11,6 @@ ul,ol,li{
 }
 
 body{
-    font-family: Roboto, sans-serif;
     background: black;
     font: normal 15pt Arial;
 }
@@ -30,45 +30,37 @@ header{
     background-size: 150px;
     background-position: center;
     padding-bottom: 30px;
-  
-}
-
-.btn-register,.btn-login{
-    margin-top:15px;
-    width:80px;
-    height:20px;
-    background: #BFA004;
-    border-radius:5px;
-    box-shadow: 1px 1px 2px #BF7E04; 
 }
 
 .btn-register:hover{
     background: #BF7E04;   
 }
 
-.btn-login:hover{
+.btn-rote-login:hover{
     background: #BF7E04;   
 }
+.btn-rote-login, .btn-rote-register{
+    width: 22%;
+}
 
-.loginRegister{
+.login-register{
     display:flex;
     justify-content: space-around;
     background:black;
     padding-bottom:10px;
     border-top: 1px solid #BF7E04;
+    padding: 2%;
 }
 
 .search{
     text-align: center;
     width: 100%;
     height: 50px;
-    background:#BF7E04;
     padding-top:20px;
 }
 
 .map{
     height: 300px;
-    background: #BF7E04;
     background-position: center; 
 }
 
@@ -85,7 +77,7 @@ header{
 main{
     width: 100%;
     height: 500px;
-    background:#BF7E04;
+    background: #F4EDE3;
 
 }
 
@@ -105,12 +97,85 @@ footer{
 }
 
 /* LOGIN */
+
 .login{
     display:flex;
     flex-direction: column;
-
 }
 
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6%;
+}
+
+.title-email-login, .title-password-login{
+    margin-left: -50%;
+}
+
+.title-password-login{
+    margin-top: 3%;
+}
+
+#btn-login{
+    width: 30%;
+    margin-top: 3%;
+}
+
+.text-password{
+    margin-top: 14%;
+}
+
+.text-password, .text-account{
+    font-size: 18px;
+}
+
+.forgot-password, .btn-register{
+    margin-top: 3%;
+    width: 45%;
+    background-color: #BF7E04;
+}
+
+.text-account{
+    margin-top: 4%;
+}
+
+.input{
+    margin-bottom: 4%;
+    width: 245px;
+    height: 38px;
+    left: 67px;
+    top: 188px;
+    background: #FFFFFF;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+
+/* Regiter */
+
+.title-register, .title-login{
+    color:#F2B705;
+    font-size: 25px;
+}
+
+.btn, .filter{
+    height: 37px;
+    background: #F2B705;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+#btn-logout{
+    width: 37px
+}
+
+.img-voltar{
+    width: 37px;
+    height: 38px;
+}
 
 /* MENU*/
 
@@ -166,3 +231,4 @@ footer{
     cursor: pointer;
     padding-top: 40px;
 }
+
