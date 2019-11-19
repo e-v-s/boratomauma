@@ -1,4 +1,5 @@
 import Button from '../components/button.js'
+import Map from "../app.js"
 
 const confirmacaoIdade = () => {
 	let age = confirm("VOCÊ TEM MAIS DE 18 ANOS?");
@@ -8,7 +9,7 @@ const confirmacaoIdade = () => {
 		console.log("Vá jogar LOL")
 	}
 }
-//confirmacaoIdade()
+confirmacaoIdade()
 
 const db = firebase.firestore();
   db.collection('bars').get().then((snap) => {
