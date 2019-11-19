@@ -104,6 +104,12 @@ footer{
     color: #BF7E04;
 }
 
+/* LOGIN */
+.login{
+    display:flex;
+    flex-direction: column;
+
+}
 
 
 /* MENU*/
