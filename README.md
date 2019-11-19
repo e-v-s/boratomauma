@@ -36,4 +36,4 @@ Com base nos problemas verificados, o nicho do app seriam pessoas maiores de 18 
 
 ## 3.2 Personas
 
-![](https://i.imgur.com/rfjKyhC.png?s=200)
+<img src="https://i.imgur.com/rfjKyhC.png" width="250" height="200">
