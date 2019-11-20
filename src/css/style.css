@@ -1,54 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+ul,ol,li{
+    list-style: none;
+
+}
+
 body{
-    background: rgb(237, 241, 17);
-    background: #F1C40F;
+    font-family: Roboto, sans-serif;
     background: black;
     font: normal 15pt Arial;
 }
 
 header{
-    /* text-align: center; */
-    background: #F1C40F;
+    width: 100%;
+    display:flex;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .logo{
-    align-items: center;
-    text-align: center;
-    background-image: url(/images/logo.png);
+    width: 100%;
+    height: 50px;
+    background-image: url('../images/logo.jpeg');
     background-repeat: no-repeat; 
-    background-position: 50%;
+    background-size: 150px;
+    background-position: center;
     padding-bottom: 30px;
   
 }
 
-section{
-    width: 400px;
-    height: 500px;
-    margin: auto;
-    background: white;
-    border-radius: 10px;
-    padding: 15px;  
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.384);  
-
+.btn-register,.btn-login{
+    margin-top:15px;
+    width:80px;
+    height:20px;
+    background: #BFA004;
+    border-radius:5px;
+    box-shadow: 1px 1px 2px #BF7E04; 
 }
 
-.slogan{
+.btn-register:hover{
+    background: #BF7E04;   
+}
+
+.btn-login:hover{
+    background: #BF7E04;   
+}
+
+.loginRegister{
+    display:flex;
+    justify-content: space-around;
+    background:black;
+    padding-bottom:10px;
+    border-top: 1px solid #BF7E04;
+}
+
+.search{
+    text-align: center;
     width: 100%;
-    height: 100px;
-    background-color: black;
-    border-bottom: 1px solid #F1C40F;
-    margin-bottom: 20px;
+    height: 50px;
+    background:#BF7E04;
+    padding-top:20px;
+}
+
+.map{
+    height: 300px;
+    background: #BF7E04;
+    background-position: center; 
 }
 
 .map-container{
-    width: 400px;
+    width: 100%;
+    height: 200px;
+    background-position: center; 
+    align-items:center;
+    border: 1px solid black;
+    text-align:center;
+    padding-top:10px;
+}
+
+main{
+    width: 100%;
     height: 500px;
+    background:#F4EDE3;
+
+}
+
+.bar{
+    background-image: url('../images/bar1.jpeg');
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
 footer{
     padding-top: 10px;
     text-align: center;
     font: italic 10pt Arial;
-    color: #F1C40F;
+    color: #BF7E04;
+}
+
+/* LOGIN */
+.login{
+    display:flex;
+    flex-direction: column;
+
 }
 
 
+/* MENU*/
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    transform: translateX(-100%);
+    transition: transform 200ms linear;
+}
+
+.menu_open{
+    transform: translateX(0)
+}
+
+.menu-item{
+    border-bottom: 1px solid #000;
+    padding: 20px 15px;
+    background-color: #BF7E04;
+}
+
+.menu-item-action{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.menu-item-action:hover{
+    font-size: 20px;
+}
+
+/* Btn Menu Open */
+.btnMenu{
+    display: block;
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    text-indent: -9999px;
+    padding: 20px 15px;
+}
+
+.btnMenu_open{
+    background: url('../images/icon-menu.png');
+    background-repeat: no-repeat;
+    background-position: 15px center;
+}
+
+.btnMenu_close{
+    background-color: black;
+    background-image: url('../images/icon-menu-yellow.png');
+    cursor: pointer;
+    padding-top: 40px;
+}
+
+.recover-layout{
+    background: #F4EDE3;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.title-recover{
+    color: #F2B705;
+    font-size: 25px;
+    text-align: center;
+}
+
+.message-recover{
+    margin-top: 30px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.email-recover{
+    font-size: 21px;
+    width: 245px;
+    height: 38px;
+    background: #FFFFFF;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    font-size: 20px;
+}
+
+.btn-recover{
+    background: #F2B705;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    font-size: 20px;
+    font-weight: bold;;
+    margin-top:30px;
+    width:160px;
+    height:40px; 
+}
+
+#message{
+    margin-top: 20px;
+}
+
+.btn-back{
+    background-image: url();
+    height: 37px;
+    background: #F2B705;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.email{
+    width: 65px;
+    height: 36px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 28px;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 30px;
+    margin-left: 55px;
+}
+
+.login-register{
+    display:flex;
+    justify-content: space-around;
+    background:black;
+    padding-bottom:10px;
+    border-top: 1px solid #BF7E04;
+    padding: 2%;
+}

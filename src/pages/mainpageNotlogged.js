@@ -19,17 +19,42 @@ const db = firebase.firestore();
 const homePage = () => {
   window.location.hash = '';
   const template = `
-  <h1>Página inicial sem estar logado</h1>
-  ${Button({
-    title:'ir pro login',
-    onclick: loginRoute
-  })}
-  ${Button({
-    title:'ir pro cadastro',
-    onclick: registerRoute
-  })}`;
+  <div class='top'>
+	  <div class='loginRegister-logout'></div> 
+    <div class='loginRegister'>
+      ${Button({
+        class: 'btn-login',
+        title:'Login',
+        onclick: loginRoute
+      })}
+      ${Button({
+        class:'btn-register',
+        title:'Cadastro',
+        onclick: registerRoute
+      })} 
+    </div>
+  </div>
+  <section class="map">
+	 	<div class="search"><select class="filter" id="filter-region">
+            <option value="nune" selected>Buscar por Região</option>
+            <option value="center">Centro</option>
+            <option value="oeste">Zona Oeste</option>
+            <option value="leste">Zona Leste</option>
+            <option value="norte">Zona Norte</option>
+            <option value="sul">Zona Sul</option>
+        </select> 
+     </div>
+	  <div class="map-container" id="map">
+     Aqui vai o mapa
+    </div>
+	</section>
+	<section class='bar'>
+  </section>
+  
+  `;
   return template;
 }
+
 
 const loginRoute = () => {
 	location.hash = 'login';

@@ -26,6 +26,7 @@ const registerRoute = () => {
 const loginPage = () => {
 	window.location.hash = 'login';
 	const template = `
+	<div class='login'>
 	<form id='homePageForm'>
 	${Input({
 		type:'text',
@@ -63,7 +64,9 @@ const loginPage = () => {
 		class:'btn',
 		title:'Cadastre-se',
 		onclick: registerRoute
-	})}`;
+	})}
+	</div> 
+	`;
 	return template;
 }
 
