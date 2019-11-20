@@ -10,7 +10,6 @@ const main = document.querySelector('main');
 const homeMain = () => {
 	main.innerHTML = homePage();
 	document.querySelector('.map-container').onload = mapHere();
-
 }
 
 const loginMain = () => {
@@ -59,7 +58,6 @@ const hash = () => {
 	// 	return registerMain();
 	// }
 }
-
 
 window.addEventListener('load', hash)
 window.addEventListener('hashchange', hash)

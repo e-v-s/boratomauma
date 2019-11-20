@@ -2,12 +2,10 @@ function mapHere(){
   const platform = new H.service.Platform({
       'apikey': 'b5q6ZKMFzd0A7Hmp-SWct71ZroHRsXLLl4r5WvJuhVg'
     });
-
     // Obtain the default map types from the platform object:
   const defaultLayers = platform.createDefaultLayers();
-
   // Instantiate (and display) a map object:
-  const map = new H.Map(
+  let map = new H.Map(
     document.querySelector('.map-container'),
     defaultLayers.vector.normal.map,
     {zoom: 14, center: {lat: -23.558822, lng: -46.662936 } })
@@ -15,7 +13,6 @@ function mapHere(){
   const behavior = new H.mapevents.Behavior(mapEvents);
   const ui = H.ui.UI.createDefault(map, defaultLayers);
   const icon = new H.map.Icon('images/beers.png');
-
   // // Create a marker using the previously instantiated icon:
   let barBelaSantos = new H.map.Marker({lat: -23.556972, lng: -46.662528}, {icon: icon});
   barBelaSantos.setData('Bar Bela Santos')
@@ -28,7 +25,6 @@ function mapHere(){
     );
     ui.addBubble(bubble);
   }, false);
-
   let oMalleys = new H.map.Marker({lat: -23.557958, lng: -46.665997}, {icon: icon});
   oMalleys.setData('Omalleys')
   oMalleys.addEventListener('tap', (event) => {
@@ -40,7 +36,6 @@ function mapHere(){
     );
     ui.addBubble(bubble);
   }, false);
-
   let bellaJau = new H.map.Marker({lat: -23.556733, lng: -46.665414}, {icon: icon});
   bellaJau.setData('Bella Jau')
   bellaJau.addEventListener('tap', (event) => {
@@ -52,7 +47,6 @@ function mapHere(){
     );
     ui.addBubble(bubble);
   }, false);
-
   let meGusta = new H.map.Marker({lat: -23.559183,lng: -46.664836}, {icon: icon});
   meGusta.setData('Me Gusta')
   meGusta.addEventListener('tap', (event) => {
@@ -64,7 +58,6 @@ function mapHere(){
     );
     ui.addBubble(bubble);
   }, false);
-
   let orangePoint = new H.map.Marker({lat: -23.556447, lng: -46.663897}, {icon: icon});
   orangePoint.setData('Orange Point')
   orangePoint.addEventListener('tap', (event) => {
@@ -76,14 +69,12 @@ function mapHere(){
     );
     ui.addBubble(bubble);
   }, false);
-
   map.addObjects([barBelaSantos, oMalleys, bellaJau, meGusta, orangePoint]);
-
 const filterRegion = document.getElementById("filter-region");
   filterRegion.addEventListener('change', (filterRegion) => {
     filter(filterRegion.target.value)
   })
-
+  
   function filter(condition) {
     if (condition === 'center') {
       document.querySelector('.map-container').innerHTML = '';

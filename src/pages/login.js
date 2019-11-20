@@ -86,5 +86,4 @@ const loginPage = () => {
 	return template;
 }
 
-
 export default loginPage;
