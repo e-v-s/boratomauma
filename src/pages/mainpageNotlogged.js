@@ -10,11 +10,11 @@ const confirmacaoIdade = () => {
 }
 //confirmacaoIdade()
 
-const db = firebase.firestore();
-  db.collection('bars').get().then((snap) => {
-  snap.forEach((doc) => {
-    console.log(`${doc.id} => ${doc.data()}`)
-  })})
+//const db = firebase.firestore();
+//  db.collection('bars').get().then((snap) => {
+//  snap.forEach((doc) => {
+//    console.log(`${doc.id} => ${doc.data()}`)
+//  })})
   
 const homePage = () => {
   window.location.hash = '';
