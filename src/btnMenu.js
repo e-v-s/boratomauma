@@ -8,8 +8,4 @@ $btnMenuOpen.addEventListener('click', function(){
 
 $btnMenuClose.addEventListener('click', function(){
     $menu.classList.remove('menu_open')
-<<<<<<< HEAD
 })
-=======
-})
->>>>>>> cd698dd8526979b941fdbaf73155e3e120eebec4
