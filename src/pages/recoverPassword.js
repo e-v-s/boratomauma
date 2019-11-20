@@ -4,17 +4,28 @@ import Input from '../components/input.js'
 const recoverPage = () => {
 	window.location.hash = 'recover';
 	const  template = `
+	<div class="login-register">
+	<h1 class="title-recover">
+	${Button({
+		id:'voltar',
+		class:'btn-back',
+		title:'voltar',
+		onclick: comeBack
+	})}
+	Recuperação de senha</h1>
+	</div>
 	<section class="recover-layout">
-	<h1>Recuperação de senha</h1>
-	<h2>Insira seu e-mail cadastrado para redefinir a sua senha</h2>
+	<p class="message-recover">Insira seu e-mail cadastrado para redefinir a sua senha</p>
 	<form id='form-email'>
+	<p class="email">Email</p>
 	${Input({
 		type:'text',
 		id:'email',
 		class:'email-recover',
-		placeholder:'e-mail'
+		placeholder:'ex: marta@hotmail.com'
 	})}
 	${Button({
+		class: 'btn-recover',
 		title:'Redefinir senha',
 		onclick: recoverPassword
 	})}
@@ -31,6 +42,14 @@ const recoverPassword = () => {
 			document.querySelector('#message').innerHTML = 'E-mail de redefinição de senha enviado',
 			document.getElementById('form-email').reset()
 		})
+		.catch(() =>{
+			document.querySelector('#message').innerHTML = 'E-mail não localizado',
+			document.getElementById('form-email').reset()
+		})
+}
+
+const comeBack = () => {
+	window.location.hash = '';
 }
 
 export default recoverPage;
