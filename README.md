@@ -22,11 +22,10 @@ O tema colocado para este projeto foi *entretenimento*; com base nisto foi feita
 Definimos o nicho a partir deste *formulário* e a partir de entrevistas pessoais verificamos problemas como:
 
 * Não existem opções de app que reúnam informações de bares e ao mesmo tempo concedem vantagens sobre o preço aos usuários cadastrados;
-* Não consigo uma opção legal para visualizar informações específicas reunidas;
 
 ## 3. UX
 
-Com base nos problemas verificados, o nicho do app seriam pessoas maiores de 18 anos que queiram buscar informações sobre bares, mas também que pudessem ter acesso a descontos e, no futuro, à criação de uma carteira virtual para pagamento via *QR code*.
+Com base nesse problema identificado, o nicho do app seriam para pessoas maiores de 18 anos que desejam buscar informações sobre bares, mas também ter acesso a descontos e, no futuro, à criação de uma carteira virtual para pagamento via *QR code*.
 
 ### 3.1 Ferramentas utilizadas
 
