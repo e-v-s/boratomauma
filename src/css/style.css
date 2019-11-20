@@ -25,7 +25,7 @@ header{
 
 .logo{
     width: 100%;
-    height: 45px;
+    height: 52px;
     background-image: url('../images/logo.jpeg');
     background-repeat: no-repeat; 
     background-size: 150px;
@@ -77,9 +77,10 @@ header{
 }
 
 .map{
-    height: 300px;
+    height: 256px;
     background: #F4EDE3;
-    background-position: center; 
+    background-position: center;
+    margin-top: 3%;
 }
 
 .map-container{
@@ -105,9 +106,13 @@ main{
     background: #F4EDE3;
 }
 
-.img-bar{
-    width: 310px;
-    
+.text-dest{
+    text-align: center;
+}
+
+.img-card{
+    width: 100%;
+    margin-top: -5%;
 }
 
 footer{
@@ -115,6 +120,11 @@ footer{
     text-align: center;
     font: italic 10pt Arial;
     color: #BF7E04;
+}
+
+.logout{
+    display: flex;
+    justify-content: space-around;
 }
 
 /* LOGIN */
@@ -143,8 +153,12 @@ footer{
 }
 
 #btn-login{
-    width: 30%;
+    width: 48%;
     margin-top: 3%;
+}
+
+#btn-register{
+    width: 70%;
 }
 
 .text-password{
@@ -241,6 +255,15 @@ footer{
     margin-top: 3%;
 }
 
+.text-account{
+    margin-top: 8%;
+    font-size: 16px;
+}
+
+.btn-account{
+    width: 37%;
+}
+
 /* MENU*/
 
 .menu{
@@ -296,6 +319,148 @@ footer{
     padding-top: 40px;
 }
 
+/* Chosen Bar */
+
+.btn-back-bar{
+    height: 37px;
+    width: 62px;
+    background: #F2B705;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    font-weight: bold;
+    font-size: 17px;
+    margin-left: -75%;
+    margin-top: 4%;
+}
+
+.bar-name-title{
+    margin-left: 23%;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: -9%;
+}
+
+.img-bar{
+    width: 310px;
+    margin-top: 8%;
+}
+
+.title-desc{
+    margin-left: -54%;
+    margin-top: 3%;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.desc-bar{
+    margin-top: 2%;
+    font-size: 16px;
+    margin-left: 8%;
+    text-align: justify;
+    margin-right: 6%;
+}
+
+.add-bar{
+    margin-top: 2%;
+    font-size: 16px;
+    margin-left: 8%;
+    text-align: center;
+    margin-right: 6%;
+    font-weight: bold;
+}
+
+.phone-bar{
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 2%;
+}
+
+.extras-bar{
+    font-size: 17px;
+    margin-left: 8%;
+    text-align: center;
+    font-style: italic;
+    margin-right: 6%;
+    margin-top: 2%;
+}
+
+.stars-bar{
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 2%;
+}
+
+.bar-reg-title{
+    margin-left: -10%;
+    margin-top: 3%;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.bar-reg-item{
+    font-size: 17px;
+    margin-top: 1%;
+    text-align: initial;
+    margin-left: 9%;
+}
+
+.btn-cupom{
+    margin-top: 3%;
+    width: 100%;
+}
+
+/* Page Cupom QRCode */
+
+.div-btn-back{
+    display: flex;
+    justify-content: space-around;
+}
+
+.page-qrcode{
+    color: #F2B705;
+    font-size: 25px;
+}
+
+.bar-name{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 22px;
+    margin-top: 10%;
+    margin-left: -33%;
+}
+
+.img-desc{
+    width: 85px;
+    height: 88px;
+    margin-top: -14%;
+    margin-left: 69%;
+    background: url(15%.png);
+    transform: rotate(11.42deg);
+}
+
+.qrcode-image{
+    border-radius: 40px;
+    margin-top: -5%;
+}
+
+.text-cupom{
+    font-weight: bolder;
+    color: black;
+    background-color: #098209;
+    font-size: 37px;
+    border-radius: 20px;
+    margin-top: 3%;
+}
+
+.text-validation{
+    font-size: 18px;
+    margin-left: 5%;
+    margin-right: 4%;
+    margin-top: 2%;
+    font-weight: bold;
+}
+
+
+
+
+
+
 /* Recover-layout*/
 
 .recover-layout{
@@ -345,7 +510,6 @@ footer{
 }
 
 .btn-back{
-    background-image: url();
     height: 37px;
     width:38px;
     background: #F2B705;

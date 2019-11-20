@@ -32,10 +32,10 @@ const homeLoggedMain = () => {
 const hash = () => {
 	firebase.auth().onAuthStateChanged((user) =>
 	{
-  		if (user) {
-  			if (location.hash === '') {
-  				return homeLoggedMain();
-  			} else if (location.hash === '#mainlogged') {
+	if (user) {
+		if (location.hash === '') {
+			return homeLoggedMain();
+		} else if (location.hash === '#mainlogged') {
   				return homeLoggedMain();
   			} 
   		} else {

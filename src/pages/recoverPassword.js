@@ -4,15 +4,14 @@ import Input from '../components/input.js'
 const recoverPage = () => {
 	window.location.hash = 'recover';
 	const  template = `
-        <div class="login-register">
-            <h2 class="title-recover">
+        <div class='login-register'>
             ${Button({
                 id:'voltar',
                 class:'btn-back',
                 title:'<img class="img-voltar" src="images/icone-voltar.png"/>',
                 onclick: comeBack
             })}
-            Recuperação de senha</h2>
+            <h2 class="title-recover">Recuperação de senha</h2>
         </div>
         <section class="recover-layout">
             <p class="message-recover">Insira seu e-mail cadastrado para redefinir a sua senha</p>

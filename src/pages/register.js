@@ -5,7 +5,7 @@ const register = (event) => {
 	const email = document.getElementById('email').value;
 	const password = document.getElementById('password').value;
 	firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
-  const errorMessage = error.message;
+const errorMessage = error.message;
 	})
 	const name = document.getElementById('name').value;	
 	const born = document.getElementById('date').value;
@@ -25,6 +25,10 @@ const logout = () => {
 	firebase.auth().signOut().then( () => {
 		window.location.hash = '';
 	})
+}
+
+const loginRoute = () => {
+	location.hash = 'login'
 }
 
 const registerPage = () => {
@@ -117,7 +121,16 @@ const registerPage = () => {
 		title:'Cadastrar',
 		onclick: register
 	})}
-	</form>`;
+	<p class='text-account'>Já tem uma conta?</p>
+	${Button({
+		type:'submit',
+		class:'btn-account btn',
+		title:'Login',
+		onclick: loginRoute
+	})}
+	</div> 
+	</form>
+	`;
 	return template;
 }
 

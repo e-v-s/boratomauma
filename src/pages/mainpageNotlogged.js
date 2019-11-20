@@ -20,22 +20,13 @@ const homePage = () => {
   window.location.hash = '';
   const template = `
     <div class='top'>
-      <div class='loginRegister'>
+      <div class='login-register'>
         ${Button({
           class: 'btn-rote-login btn',
           title:'Login',
           onclick: loginRoute
         })}
-        ${Button({
-          class:'btn-rote-register btn',
-          title:'Cadastro',
-          onclick: registerRoute
-        })} 
-      </div>
-    </div>
- <section class="map">
-	 	<div class="search">
-      <select class="filter" id="filter-region" onload = 'mapHere()' >
+        <select class="filter" id="filter-region" onload = 'mapHere()' >
             <option value="nune" selected>Buscar por Região</option>
             <option value="center">Centro</option>
             <option value="oeste">Zona Oeste</option>
@@ -43,18 +34,23 @@ const homePage = () => {
             <option value="norte">Zona Norte</option>
             <option value="sul">Zona Sul</option>
         </select> 
-     </div>
-    <div class="map-container" id='map'>
-    
+        ${Button({
+          class:'btn-rote-register btn',
+          title:'Cadastro',
+          onclick: registerRoute
+        })} 
+      </div>
     </div>
-	</section>
+    <section class="map">
+      <div class="map-container" id='map'></div>
+    </section>
     <section class='bar'>
       ${Button({
         value:'Bar Bela Santos',
         id:'CUvUsqpwc4zuzhTqRvAa',
         class:'btn-bar btn',
         type:'submit',
-        title:'<img src="./images/bar-bela-santos.jpeg" class="img-bar">',
+        title:'<img src="./images/bar-bela-santos.jpeg" class="img-card">',
         onclick: registerRoute
       })}
     </section>`;
