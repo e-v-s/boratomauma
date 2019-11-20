@@ -34,7 +34,7 @@ const loginPage = () => {
 	const template = `
 	<div class='login-register'>
 		${Button({
-			id:'btn-logout',
+			id:'btn-back',
 			class:'btn',
 			type:'submit',
 			title: '<img class="img-voltar" src="images/icone-voltar.png"/>',

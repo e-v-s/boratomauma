@@ -5,14 +5,14 @@ const recoverPage = () => {
 	window.location.hash = 'recover';
 	const  template = `
         <div class="login-register">
-            <h1 class="title-recover">
+            <h2 class="title-recover">
             ${Button({
                 id:'voltar',
                 class:'btn-back',
-                title:'voltar',
+                title:'<img class="img-voltar" src="images/icone-voltar.png"/>',
                 onclick: comeBack
             })}
-            Recuperação de senha</h1>
+            Recuperação de senha</h2>
         </div>
         <section class="recover-layout">
             <p class="message-recover">Insira seu e-mail cadastrado para redefinir a sua senha</p>
