@@ -85,9 +85,9 @@ O app é uma SPA e etilizamos HTML5, CSS3, ES6, Git e Here (API de localização
 
 ## 6. Desenvolvedoras
 
-[Ericka Lemos](https://github.com/erickalemos)
-[Évora da Ibéria](https://github.com/e-v-s)
-[Gabriela Serodio](https://github.com/GabrielaSerodio)
-[Leticia Silveira](https://github.com/LeticiaISilveira)
-[Renata Secco](https://github.com/renata-msecco)
-[Rosangela Silva](https://github.com/rosangelabsilva)
+* [Ericka Lemos](https://github.com/erickalemos)
+* [Évora da Ibéria](https://github.com/e-v-s)
+* [Gabriela Serodio](https://github.com/GabrielaSerodio)
+* [Leticia Silveira](https://github.com/LeticiaISilveira)
+* [Renata Secco](https://github.com/renata-msecco)
+* [Rosangela Silva](https://github.com/rosangelabsilva)
