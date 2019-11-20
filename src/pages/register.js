@@ -6,7 +6,6 @@ const register = (event) => {
 	const password = document.getElementById('password').value;
 	firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
   const errorMessage = error.message;
-  //alert(errorMessage);
 	})
 	const name = document.getElementById('name').value;	
 	const born = document.getElementById('date').value;
