@@ -34,7 +34,8 @@ const homePage = () => {
       </div>
     </div>
  <section class="map">
-	 	<div class="search"><select class="filter" id="filter-region" onload = 'mapHere()' >
+	 	<div class="search">
+      <select class="filter" id="filter-region" onload = 'mapHere()' >
             <option value="nune" selected>Buscar por Região</option>
             <option value="center">Centro</option>
             <option value="oeste">Zona Oeste</option>
@@ -47,8 +48,6 @@ const homePage = () => {
     
     </div>
 	</section>
-	<section class='bar'>
-  </section>
     <section class='bar'>
       ${Button({
         value:'Bar Bela Santos',

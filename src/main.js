@@ -27,6 +27,7 @@ const registerMain = () => {
 
 const homeLoggedMain = () => {
 	main.innerHTML = homeLogged();
+	document.querySelector('.map-container').onload = mapHere();
 }
 
 const hash = () => {
